@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
     else
     {
        // Todos los pedidos pendientes
-       $sql = $dbConn->prepare("SELECT * FROM pedidos ORDER BY fechaPedido");
+       $sql = $dbConn->prepare("SELECT * FROM pedidos WHERE estadoPedido = 0");
        $sql->execute();
        $sql->setFetchMode(PDO::FETCH_ASSOC);
        header("HTTP/1.1 200 OK");
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
     $input = $_POST;
-    $sql = "INSERT INTO pedidos VALUES (null, CURDATE(), '".$_POST['fechaEstimadaPedido']."', '".$_POST['descripcionPedido']."', ".$_POST['importePedido'].",0, ".$_POST['idTiendaFK'].")";
+    $sql = "INSERT INTO pedidos VALUES (null, '".$_POST['fechaPedido']."', '".$_POST['fechaEstimadaPedido']."', '".$_POST['descripcionPedido']."', ".$_POST['importePedido'].",0, ".$_POST['idTiendaFK'].")";
     $statement = $dbConn->prepare($sql);
     $statement->execute();
     $postId = $dbConn->lastInsertId();
