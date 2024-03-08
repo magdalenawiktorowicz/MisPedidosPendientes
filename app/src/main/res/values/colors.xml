@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="olivine">#9F9AAF84</color>
+    <color name="light_green">#E3ECDA</color>
+    <color name="imperial_red">#FB4B4E</color>
+    <color name="gunmetal">#343846</color>
+    <color name="indigo_dye">#0B4F6C</color>
+    <color name="light_blue">#B0D0D3</color>
+    <color name="puce">#B1677E</color>
+    <color name="puce_light">#AC8491</color>
+    <color name="melon">#F7AF9D</color>
+    <color name="peach">#F7E3AF</color>
+    <color name="light_peach">#FDF1D1</color>
+    <color name="lemon_chiffon">#FBF8DC</color>
+</resources>

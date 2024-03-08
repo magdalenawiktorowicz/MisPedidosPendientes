@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyStyle" parent="Theme.MisPedidosPendientes">
+        <item name="android:windowBackground">@color/light_green</item>
+        <item name="fontFamily">@font/balsamiq_sans</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="MyButton" parent="MyStyle">
+        <item name="android:backgroundTint">@color/puce</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="ListItemTextStyle" parent="MyStyle">
+        <item name="android:textColor">@color/gunmetal</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:shadowColor">@color/puce_light</item>
+        <item name="android:shadowRadius">7</item>
+        <item name="android:fontFamily">@font/balsamiq_sans</item>
+    </style>
+
+    <style name="MainTitles" parent="Widget.Material3.ActionBar.Solid">
+        <item name="android:textColor">@color/gunmetal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/puce</item>
+        <item name="android:shadowRadius">10</item>
+        <item name="android:fontFamily">@font/balsamiq_sans</item>
+    </style>
+
+    <style name="MyDialogWindow" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:textColor">@color/gunmetal</item>
+        <item name="android:backgroundTint">@color/light_peach</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/puce</item>
+        <item name="android:shadowRadius">10</item>
+        <item name="android:fontFamily">@font/balsamiq_sans</item>
+    </style>
+
+</resources>
